@@ -2,6 +2,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: white;
     margin-top: auto;
+   
 }
 
 .pré_header{
@@ -26,8 +27,8 @@ th a{
     text-decoration: none;
     color: white;
 }
-th a:hover{
-    color: blue;
+th:hover{
+    background-color: rgb(11, 108, 138);
 }
 
 
@@ -155,7 +156,6 @@ h4{
 .conteneur1{
     width: 100%;
     height: 200px;
-    border: 1px solid black;
     background-image: url("img/Rectangle.png");
     margin-bottom: 80px;
 }
@@ -164,7 +164,6 @@ h4{
     margin-right: 100px;
     height: 150px;
     width: auto;
-    
     overflow: hidden;
     align-items: center;
     padding-left: 60px;
@@ -174,14 +173,12 @@ h4{
 }
 .tof1{
     width: 15%;
-    height: 150px;
-    border: 1px solid black; 
+    height: 150px; 
   
 }
 .tof2{
     width: 15%;
     height: 150px;
-    border: 1px solid black;
    
 }
 .fleche{
@@ -239,12 +236,12 @@ h4{
     padding-right: 30px;
 }
 nav{
-    width: 60%;
+    width: 100%;
     height: 50px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 0%;
+    margin-left: 0%;
     position: sticky;
-    background-color: aqua;
+    background-color:rgb(113, 227, 255);
 }
 nav ul{
     list-style-type:none;
@@ -260,26 +257,34 @@ nav a{
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
+    margin-right: 50px;
 }
 nav a:hover{
     color: red;
     border-bottom: 2px solid red;
 }
-h6{
+.rouge{
     font-size: 30px;
     text-align: center;
     color: red;
-    line-height: 0px;
+    font-weight: bold;
 }
+/*h6{
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    line-height: -3em;
+
+}*/
 .R1{
     text-align: center;
-    line-height: 0px;
+    line-height: ;
     font-size: 20px;
     font-weight: bold;
 }
 
  
-input[type="text"]{
+/*input[type="text"]{
     width: 700px;
     height: 20px;
     margin-left: -20px;
@@ -290,11 +295,14 @@ input[type="text"]{
     background-color: aqua;
 }
 .search{
-    width: 50%;
-    height: 30px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px;  
+    width: 700px;
+    height: 200px;
+    margin-left: 200px;;
+    margin-right: -100px;
+    margin-top: 300px;  
+    align-items: center;
+    background-color: aqua;
+    
 }
 input{
     font-size: 20px;
@@ -303,7 +311,7 @@ input{
     background-color: aqua;
     padding: 10px;
     width: 300px;
-    margin-top:-500px;
+    margin-top:
 }
 .date{
     width: 500px;
@@ -317,15 +325,271 @@ input[type="number"]{
     position: inherit;
     margin-right: 1000px;
     margin-left: 50px;
+
     
 }
 .element{
     display: flex;
     justify-content: space-around;
+}*/
+
+.conteneur3{
+    border-radius: 30px;
+    border: 1px solid transparent;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;           
+    background-color: rgba(255, 0, 0, 0.055);   
+}
+.titre3{
+    line-height: 1em;
+}
+input[type="date"], input[type="number"], input[type="submit"]{
+    width: 303px;
+    height: 50px;
+    margin-left: 38px ;
+    margin-right: -3px;
+    margin-top: -15px;
+    background-color:rgb(113, 227, 255) ;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0px;
+}
+input[type="datetime"]{
+    width: 698px;
+    height: 50px;
+    margin-left: 38px ;
+    padding-left: 20px;
+    background-color:rgb(113, 227, 255) ;
+    border-radius: 10px;
+    border: 0px;
+    font-size:16px ;
+    font-weight: bold;
+
+}
+.check{
+    width: 323px;
+    height: 40px;
+    background-color:rgb(187, 186, 186) ;
+    margin-left: 38px;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.bout1{
+    display: flex;
+    
+}
+.bout2{
+    display: flex;
+}
+input[type="submit"]{
+    margin-top: 0px;
+    margin-left: 36px;
+    width: 340px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(4, 4, 63);
+    border: 0px;
+}
+input[type="submit"]:hover{
+    text-decoration: none;
+    background-color: blue;
+}
+.ecrivez{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.conteneur4{
+    background-image: url("img/Rectangle.png");
+    background-color:solid black;
+    padding-bottom: 50px;
+}
+input[type="text"]{
+    width: 203px;
+    height: 40px;
+    margin-bottom: -15px;
+    padding-left: 20px;
+}
+.barres1{
+    display: flex;
+}
+.nom{
+    margin-right: 50px;
+}
+.prenom{
+    margin-left: -20px;
+}
+input[type="email"]{
+    width: 462px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+textarea{
+    width: 465px;
+    height: 100px;
+    padding-left: 20px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+.GPS{
+    width: 40%;
+    height: 100px;
+    background-color: brown;
+    margin-left: 100px;
+}
+.group-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.temoignage{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.formulaire{
+    margin-left: -50px;
+    margin-right:100px ;
+    margin-top: -15px;
+
+}
+.colonne{
+    display: flex;
+}
+.franck{
+    width: 250px;
+    border-radius: 20px;
+   
+    height: 400px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgb(248, 248, 197);
+    
 }
 
-/*.dot{
+
+.ib{
+    width:250px;
+    border-radius: 20px;
+    
+    height: 400px;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: rgb(248, 248, 197);
+}
+.danya{
+    width:250px;
+    border-radius: 20px;
+    
+    height: 400px;
+    padding: 20px;
+    text-align: center;  
+    background-color: rgb(248, 248, 197);
+}
+.centre{
+    text-align: center;
+}
+.centre2{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.centre2 a:hover{
+    color: green;
+}
+/*
+    
+}*/
+.foot{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color:rgb(0, 128, 117) ;
+}
+.tof-tour{
     width: 100px;
     height: 100px;
-    background-color: black;
-}*/
+    margin-top: -50px;
+}
+.sentez{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-right: 300px;
+    font-style: italic;
+}   
+.conteneur5{
+    background-color: rgb(187, 183, 183);
+}
+.foot-flex1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.propos{
+    margin-right: -150px;
+}
+.blue-tx{
+    color: rgb(4, 4, 94);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.foot-flex2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+.rezo{
+    margin-left: 120px;
+}
+
+.paye{
+    margin-right: 100px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color:rgb(31, 29, 29) ;
+    color: rgb(110, 109, 106);
+}
+.list1 ul{
+    list-style-type: none;
+    text-decoration: underline;
+}
+.list2 ul{
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+
