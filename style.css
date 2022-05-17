@@ -231,7 +231,6 @@ h4{
     margin-left: 600px;
     border-radius: 30px;
     background-color: rgba(72, 255, 0, 0.877);
-    padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -591,5 +590,14 @@ button{
     list-style-type: none;
     text-decoration: underline;
 }
+@media all and(max-width: 1300px){
+
+}
+    
+
+
+
+
+
 
 
