@@ -1,17 +1,30 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: white;
-    margin-top: auto;
-   
+  
+}
+/* html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}*/
+.logo {
+    margin-right: 20px;
 }
 
-.pré_header{
+.pre_header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-top;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 20px;
+
 }
+.pre_header_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
 table{
     border-collapse: collapse;
 }
@@ -39,22 +52,43 @@ th:hover{
     margin-top: -700px;
     width: 450px;
 }
-.titres{
+.home_bg_image {
+    background: url('img/background.png');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+/*.titres{
     margin-top: -500px;
     margin-left: 200px;
     text-align: center;
     text-decoration: none;
     line-height: 0px;  
-}
+}*/
 .tete{
     font-size: 20px;
     color: black;
 }
-
-.bouton{
+.buton-wrapper {
     display: flex;
-    justify-content: space-around;
+
+}
+.button{
+    padding: 15px 25px;
+    background-color: #225C59;
+    color: white;
+    border-radius: 30px;
+    margin-left: 20px;
+    
    
+}
+.button-second{
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.396);
+    color: black;
+    border-radius: 30px;
+
 }
 .bouton1{
     border-radius: 30px;   
@@ -74,14 +108,23 @@ th:hover{
     margin-right:300px;
     background-color: rgba(255, 255, 255, 0.384);
 }
-h1{
-    font-size: 100px;
+.home-text{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.home-text h1{
+    font-size: 4rem;
     color: white;
     text-shadow: 2px 2px 2px black;
+    margin: 0 auto;
 }
-h2{
-    font-size: 50px;
+.home-text h2{
+    font-size: 3rem;
     color: black;
+    margin-top: -7px;
+
+
 }
 a{
     text-decoration: none;
@@ -95,7 +138,7 @@ a{
 }
 
 .tittles{
-    margin-top: 300px;
+
     text-align: center;
     line-height: 0%;
   
@@ -115,19 +158,20 @@ h4{
 }
 .services{
     display: flex;
-    justify-content: space-around;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly;   
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 100%;
 }
 .equipe{
     border-radius: 30px;
     background-color: rgba(239, 243, 0, 0.411);
-    width: 35%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    max-width: 30%;
+    height: auto;
+    padding-left: 1em;
+    padding-right:1em;
+    padding-top: 1em;
     text-align: center;
 }
 .bold{
@@ -136,21 +180,21 @@ h4{
 .professionalisme{
     border-radius: 30px;
     background-color: rgba(239, 243, 0, 0.411);
-    margin-left: 30px;
-    width: 35%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    max-width: 30%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     text-align: center;
 }
 .accomplissement{
     border-radius: 30px;
-    background-color: rgba(239, 243, 0, 0.411);
-    margin-left: 30px;
-    width: 35%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    background-color: rgba(239, 243, 0, 0.411);  
+    max-width: 30%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     text-align: center;
 }
 .conteneur1{
@@ -185,17 +229,15 @@ h4{
     display: flex;
 }
 .tof{
-    width: 25%;
-    height: 200px;
-    padding: 15px;
+    width: 30%;
+    height: 300px;
     
 
 }
 .villes{
-    align-items: center;
-    margin-right: -100px;
-    margin-left: 150px;
-      
+    width: 100%;
+    padding-left: 4em;
+    
 }
 .commentaire{
     margin-top: 50px;
@@ -277,7 +319,7 @@ nav a:hover{
 }*/
 .R1{
     text-align: center;
-    line-height: ;
+   
     font-size: 20px;
     font-weight: bold;
 }
@@ -338,7 +380,6 @@ input[type="number"]{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    box-sizing: border-box;
     box-shadow: 0px 0px 5px black;           
     background-color: rgba(255, 0, 0, 0.055);   
 }
@@ -359,10 +400,11 @@ input[type="date"], input[type="number"], input[type="submit"]{
     font-weight: bold;
     border: 0px;
 }
-input[type="datetime"]{
+.searche input[type="text"]{
     width: 698px;
     height: 50px;
     margin-left: 38px ;
+    margin-bottom: 1px;
     padding-left: 20px;
     background-color:rgb(113, 227, 255) ;
     border-radius: 10px;
@@ -454,7 +496,7 @@ button{
     color: white;
     font-weight: bold;
 }
-.GPS{
+.gps{
     width: 40%;
     height: 100px;
     background-color: brown;
@@ -590,8 +632,14 @@ button{
     list-style-type: none;
     text-decoration: underline;
 }
-@media all and(max-width: 1300px){
-
+@media (max-width:600px){
+.buton-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.button-second{
+    margin-top: 10px;
+}
 }
     
 
